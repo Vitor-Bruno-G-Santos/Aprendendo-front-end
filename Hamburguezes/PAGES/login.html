@@ -5,8 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamburguer 543 - Login</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../IMG/burger-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="tela-login">
+    <div class="container-login">
+        <div class="foto-login">
+            <img src="../IMG/Burger.webp" alt="Hamburguer em 3D antigo" class="imagem-burg">
+        </div>
+        <div class="area-login">
+            <div class="card-login">
+                <h5 class="title-login">LOGIN</h5>
+                <div class="inputs-login">
+                    <label for="usuario">Usuário</label>
+                    <input type="email" name="usuario" id="usuario" placeholder="email@gmail.com" class="input-usuario">
+                </div>
+                <div class="inputs-login">
+                    <label for="senhas">Senha</label>
+                    <input type="password"  name="senhas" id="senhas" placeholder="Senha@123" class="input-usuario">
+                </div>
+                <div class="itens-senha">
+                    <div class="lembrar-senha">
+                        <input type="checkbox" name="manter-conectado" id="manter-conectado">
+                        <label for="manter-conectado">Lembrar-Me</label>
+                    </div>
+                    <p class="esqueci-senha">Esqueci Minha Senha</p>
+                </div>
+                <button type="submit" class="btn-login">LOGAR</button>
+                <p>Não tenho conta. <span><a href="">Cadastre-se</a></span></p>
+                <div class="area-icones">
+                    <p class="opcoes-login">Logar Com</p>
+                    <div class="icones-login">
+                        <a href=""><i class="fa-brands fa-google"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-apple"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 
 </body>
 </html>

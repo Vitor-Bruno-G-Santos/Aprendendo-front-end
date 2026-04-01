@@ -1,0 +1,110 @@
+.tela-login{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(255, 186, 57); */
+    display: flex;
+}
+
+.container-login{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.foto-login{
+    display: flex;
+    width: 50%;
+    /* background-color: #fff; */
+    align-content: center;
+    filter: drop-shadow(30px 30px 30px line);
+
+    /* background-color: black; */
+}
+
+.imagem-burg{
+    filter: drop-shadow(0px 10px 0px red);
+}
+
+.imagem-burg:before {
+    content:"";
+    position: absolute;
+    inset: -5px;
+    transform: translate(10px,8px);
+    z-index: -1;
+    background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
+    filter: blur(10px);
+}
+
+
+
+.area-login{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-login{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: brown;
+    height: 60%;
+    padding: 20px;
+    justify-content: space-around;
+}
+.title-login{
+    font-size: 2rem;
+    color: var(--cor-menu);
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.inputs-login{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputs-login label{
+    color: var(--cor-menu);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.input-usuario{
+    outline: none;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: none;
+    height: 2rem;
+}
+/* .input-usuario::placeholder{
+    padding: 10px;
+    columns: rgba(139,0,0,0.5);
+} */
+.input-usuario:focus{
+    padding-left: 10px;
+}
+
+.itens-senha{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.btn-login{
+    /* width: 50%; */
+    align-self: center;
+    padding: 10px 30px 10px 30px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--cor-menu);
+    color: #fff;
+    
+}
