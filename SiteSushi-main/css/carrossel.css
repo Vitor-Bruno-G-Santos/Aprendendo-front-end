@@ -1,0 +1,77 @@
+.area-carrossel{
+
+    width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+
+}
+
+.track{
+    display: flex;
+    width: max-content;
+    animation: carrossel 12s linear infinite;
+    gap: 20px;
+}
+
+.track img{
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.track:hover{
+    animation-play-state: paused;
+}
+
+@keyframes carrossel{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-1890px);
+    }
+}
+
+.area-carrossel-principal{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    top: -10px;
+    overflow: hidden;
+}
+
+.carrossel-principal{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide{
+    min-width: 100%;
+    height: 100%;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.area-carrossel-principal button{
+    z-index: 2;
+    position: absolute;
+    color: rgb(240, 255, 243);
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 15px;
+    background-color: var(--color-primary-6);
+    color: none;
+}
+
+
+.area-carrossel-principal button:first-of-type{
+    left: 30px;
+}
+
+.area-carrossel-principal button:last-of-type{
+    right: 30px;
+}
